@@ -1,27 +1,53 @@
 <!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/styles/main.scss" />
+        <title>Montserrat - Comarca de Barcelona</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Explora Montserrat</h1>
+            <p>Una joya natural y cultural en la comarca de Barcelona</p>
+        </header>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+        <section class="about">
+            <h2>Acerca de Montserrat</h2>
+            <p>
+                Montserrat es una montaña espectacular conocida por sus
+                formaciones rocosas únicas y su importante monasterio. Atrae
+                tanto a amantes de la naturaleza como a devotos religiosos.
+            </p>
+        </section>
+
+        <section class="highlights">
+            <h2>Puntos de Interés</h2>
+            <div class="highlight-item">
+                <h3>Monasterio de Montserrat</h3>
+                <p>
+                    Fundado en el siglo XI, el monasterio es el hogar de la
+                    "Moreneta", la patrona de Cataluña.
+                </p>
+            </div>
+            <div class="highlight-item">
+                <h3>Senderismo</h3>
+                <p>
+                    La montaña cuenta con diversas rutas de senderismo con
+                    vistas espectaculares.
+                </p>
+            </div>
+            <div class="highlight-item">
+                <h3>Naturaleza</h3>
+                <p>
+                    Montserrat alberga una gran diversidad de flora y fauna
+                    autóctona de Cataluña.
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 Descubre Montserrat - Comarca de Barcelona</p>
+        </footer>
+    </body>
 </html>

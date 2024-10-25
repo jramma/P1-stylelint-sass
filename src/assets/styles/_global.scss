@@ -1,0 +1,60 @@
+// main.scss
+
+body {
+  font-family: $font-family-sans;
+  color: $text-color;
+  background-color: $background-color;
+  margin: 0;
+}
+
+.header {
+  background-color: $primary-color;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+.about, .highlights {
+  padding: 2rem;
+  h2 {
+    color: $secondary-color;
+    margin-bottom: 1rem;
+  }
+}
+
+.highlight-item {
+  margin-bottom: 1.5rem;
+  h3 {
+    font-size: 1.2rem;
+    color: $primary-color;
+  }
+}
+
+.footer {
+  background-color: $secondary-color;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .header, .about, .highlights {
+    padding: 4rem;
+  }
+
+  .highlight-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
