@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-sans;
   font-size: 16px;
   line-height: 24px;
   background-color: $uoc-bg;
@@ -88,7 +88,7 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-  @media (min-width: 768px) {
+  @media (min-width: $md) {
     width: 50%;
   }
 }
