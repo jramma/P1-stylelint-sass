@@ -7,12 +7,38 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  padding: 2rem;
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
   background-color: $uoc-bg;
   color: $uoc-corporate;
+}
+.header {
+  background-image: url("/src/assets/images/marty-bell-TrOAkszKzzA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+  justify-content: center;
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw + 1rem, 6rem); // Tamaño de fuente adaptable
+    line-height: 1.2; // Espaciado adecuado entre líneas
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: clamp(1rem, 2vw + 0.5rem, 2rem); // Tamaño de fuente adaptable
+    max-width: 600px; // Limitar el ancho del párrafo para mejor legibilidad
+    line-height: 1.5;
+  }
 }
 
 .uoc-container {
@@ -22,8 +48,7 @@ body {
   border-radius: 2rem;
   text-align: center;
   background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%),
-    0 2px 4px -1px rgb(0 0 0 / 6%);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
 }
 
 .uoc-logo {
@@ -54,4 +79,62 @@ body {
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
+}
+.komoot-map {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1rem ;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: translateY(-10px);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.swiper-slide p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+
+.swiper-pagination-bullet {
+  background-color: #333;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #333 !important;
 }

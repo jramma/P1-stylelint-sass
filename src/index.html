@@ -4,50 +4,23 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/styles/main.scss" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
         <title>Montserrat - Comarca de Barcelona</title>
     </head>
     <body>
-        <header class="header">
-            <h1>Explora Montserrat</h1>
-            <p>Una joya natural y cultural en la comarca de Barcelona</p>
-        </header>
-
-        <section class="about">
-            <h2>Acerca de Montserrat</h2>
-            <p>
-                Montserrat es una montaña espectacular conocida por sus
-                formaciones rocosas únicas y su importante monasterio. Atrae
-                tanto a amantes de la naturaleza como a devotos religiosos.
-            </p>
-        </section>
-
-        <section class="highlights">
-            <h2>Puntos de Interés</h2>
-            <div class="highlight-item">
-                <h3>Monasterio de Montserrat</h3>
-                <p>
-                    Fundado en el siglo XI, el monasterio es el hogar de la
-                    "Moreneta", la patrona de Cataluña.
-                </p>
-            </div>
-            <div class="highlight-item">
-                <h3>Senderismo</h3>
-                <p>
-                    La montaña cuenta con diversas rutas de senderismo con
-                    vistas espectaculares.
-                </p>
-            </div>
-            <div class="highlight-item">
-                <h3>Naturaleza</h3>
-                <p>
-                    Montserrat alberga una gran diversidad de flora y fauna
-                    autóctona de Cataluña.
-                </p>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <p>&copy; 2024 Descubre Montserrat - Comarca de Barcelona</p>
-        </footer>
+        <include src="./views/header.html"></include>
+        <main>
+            <include src="./views/about.html"></include>
+            <include src="./views/highlights.html"></include>
+            <include src="./views/swiper.html"></include>
+            <include src="./views/montserrat.html"></include>
+        </main>
+        <include src="./views/footer.html"></include>
+        <script src="./assets/scripts/main.js" type="module"></script>
     </body>
 </html>
