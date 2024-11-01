@@ -7,6 +7,7 @@ const swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
   slidesPerView: 1,
+
   loop: true,
   autoplay: {
     delay: 2500,
@@ -16,10 +17,7 @@ const swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  touchRatio: 1,
   breakpoints: {
     768: {
       slidesPerView: 2.5,
@@ -39,4 +37,12 @@ const swiper = new Swiper(".mySwiper", {
 +(function () {
   const university = "UOC";
   console.log(`Hello, ${university}!`);
+  const clickElement = document.querySelector(".click");
+  const listaElement = document.querySelector(".lista");
+  const chevronIcon = document.querySelector(".chevron");
+
+  clickElement.addEventListener("click", () => {
+    listaElement.classList.toggle("open");
+    chevronIcon.classList.toggle("open-chevron"); // Rota el chevron
+  });
 })();
