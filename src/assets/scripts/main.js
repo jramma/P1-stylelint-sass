@@ -3,7 +3,7 @@
  * see commented examples below
  */
 
-const swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".my-swiper", {
   spaceBetween: 30,
   centeredSlides: true,
   slidesPerView: 1,

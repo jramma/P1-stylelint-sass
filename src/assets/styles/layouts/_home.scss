@@ -13,6 +13,7 @@ body {
   background-color: $uoc-bg;
   color: $uoc-corporate;
 }
+
 .header {
   background-image: url("/src/assets/images/marty-bell-TrOAkszKzzA-unsplash.jpg");
   background-size: cover;
@@ -80,13 +81,14 @@ body {
   font-size: 0.75rem;
   text-align: center;
 }
+
 .komoot-map {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
 
   @media (min-width: $md) {
     width: 50%;
@@ -107,8 +109,8 @@ body {
   align-items: center;
   padding: 1rem;
   border-radius: 12px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
   transition: transform 0.3s ease;
 }
 
@@ -127,16 +129,17 @@ body {
 .swiper-slide p {
   margin-top: 0.5rem;
   font-size: 1rem;
-  color: #666;
+  color: $secondary-color;
 }
 
 .swiper-pagination-bullet {
-  background-color: #333;
+  background-color: $secondary-color;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #333 !important;
+  background-color: #000 !important;
 }
+
 .about {
   padding: 2rem;
   margin: 0 auto;
@@ -173,28 +176,35 @@ body {
     }
   }
 }
+
 .highlights {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+
   @media (min-width: $md) {
     flex-direction: row;
   }
+
   .box {
     width: 100%;
+
     @media (min-width: $md) {
       width: 50%;
       margin: 2rem;
+
+      .alt-img {
+        margin-bottom: 15rem;
+      }
     }
+
     overflow: hidden;
     margin: 0;
+
     img {
       max-width: 100%;
       aspect-ratio: 1/1;
       object-fit: cover;
-    }
-    .altImg {
-      margin-bottom: 15rem;
     }
   }
 }
@@ -205,11 +215,12 @@ body {
   cursor: pointer;
   border-radius: 8px;
   border: 1px solid $primary-color;
-  :hover {
-    color: $primary-color;
-    transition: all 0.3s ease;
-  }
   transition: all 0.3s ease;
+
+  &:hover {
+    color: $primary-color;
+  }
+
   .chevron {
     transition: transform 0.3s ease;
     width: 2rem;
@@ -228,15 +239,16 @@ body {
 }
 
 // Rota el icono cuando la lista está abierta
+
 .open-chevron {
   transform: rotate(180deg);
 }
-.mySwiper {
+
+.my-swiper {
   border-top: 1px solid $primary-color;
   padding-top: 6rem;
   padding-bottom: 6rem;
   border-bottom: 1px solid $primary-color;
-  // Asegura que el padding se respete dentro del contenedor
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,20 +258,22 @@ body {
   }
 
   .swiper-slide {
-    text-align: center; // Centra el contenido de cada slide
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     aspect-ratio: 4/5;
     width: 100%;
     height: auto;
+
     img {
       max-width: 100%;
       height: auto;
       aspect-ratio: 1/1;
-      border-radius: 8px; // Añade bordes redondeados si quieres
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Añade sombra para realzar la imagen
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
     }
+
     p {
       margin-top: 0.5rem;
       font-size: 0.9rem;
@@ -273,11 +287,11 @@ body {
   padding: 2rem;
   background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+
   h2 {
     font-size: 1.8rem;
     font-weight: 600;
-    margin-bottom: 1rem;
     color: #333;
     text-align: center;
     margin-bottom: 2rem;
@@ -287,35 +301,31 @@ body {
     max-width: 100%;
     display: flex;
     flex-direction: column-reverse;
+
     @media (min-width: $md) {
       flex-direction: row;
       align-items: flex-start;
     }
   }
 
-  // Estilos para el contenedor de texto
-
-  p {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
   ul {
     padding-left: 1rem;
     list-style: none;
     max-width: 400px;
+
     li {
       margin-bottom: 1rem;
       position: relative;
       padding-left: 1.2rem;
       font-size: 0.95rem;
       max-width: 400px;
-      box-sizing: border-box; // Considera padding/margen en ancho
+      box-sizing: border-box;
+
       &::before {
         content: "•";
         position: absolute;
         left: 0;
-        color: $primary-color; // Color de acento para el símbolo de lista
+        color: $primary-color;
       }
 
       strong {
@@ -324,7 +334,6 @@ body {
     }
   }
 
-  // Estilos para el contenedor del mapa
   .komoot-map {
     width: 100%;
     max-width: 600px;
@@ -332,23 +341,14 @@ body {
     iframe {
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
     }
 
     div {
       margin-top: 0.5rem;
       font-size: 0.75rem;
       text-align: center;
-      color: #777;
-
-      a {
-        color: #4c8c2b;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
+      color: $secondary-color;
     }
   }
 }

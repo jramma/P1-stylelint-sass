@@ -1,6 +1,6 @@
 // Si hubiera más de un script esto no estaría en main.js
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".my-swiper", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
